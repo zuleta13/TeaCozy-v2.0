@@ -1,0 +1,246 @@
+/* UNIVERSAL STYLES */
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* OFFSET FOR THE MAIN AND FOOTER SECTIONS */
+/* intentaré corregirlo más tarde con una cabecera invisible de las mismas características de la que sí lo es */
+main, .division, footer {
+    position: relative;
+    top: 81px;
+}
+
+/* .scroll-fix {
+    height: 162px;
+    width: 100%;
+    z-index: 0;
+} */
+
+
+/* STYLES RELATIVE TO THE HEADER AND ITS DIFFERENT PARTS */
+header {
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    padding-left: 1.2rem;
+    position: relative;
+    top: 5px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-right: 1.2rem;
+}
+
+.button {
+    color: seashell;
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    margin: 0 5px;
+    letter-spacing: 1px;
+    border: 1px solid seashell;
+    border-radius: 25px;
+    transition: background-color ease-in-out 700ms;
+}
+
+.button:hover, .button:focus {
+    background-color: seashell;
+    color: black;
+}
+
+.button:active {
+    background-color: black;
+}
+
+/* Orden lógico de los pseudo-selectores */
+/* 
+Link
+Visited
+Hover
+Focus
+Active
+*/
+
+/* STYLES RELATIVE TO THE MAIN SECTION */
+main {
+    z-index: 3;
+    margin: 20px 0;
+}
+
+/* -- COMMON STYLES FOR THE DIFFERENT SECTIONS THAT COMPRISE THE MAIN SECTION */
+.highlight {
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* - OUR MISSION SECTION */
+#mission {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url(../media/images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.highlight h2 {
+    margin-bottom: 0.7rem;
+}
+
+.highlight h4 {
+    font-style: italic;
+}
+
+
+/* - FEATURED TEA SECTION */
+#featured-tea {
+    width: 1200px;
+    padding: 20px 0;
+    margin: 20px auto;
+    border: 2px solid #776267;
+    border-radius: 15px;
+    background-color: #77626769;
+}
+
+/* #featured-tea .highlight {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} */
+
+.item {
+    width: 300px;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item h4 {
+    margin-top: 10px;
+}
+
+.offered-items {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    padding-top: 20px;
+    /* background-color: rgb(62, 65, 65); */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+/* - LOCATIONS SECTION */
+#locations {
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url(../media/images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+#locations .highlight {
+    opacity: 80%;
+}
+
+#locations .highlight h2 {
+    margin-bottom: 0;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: black;
+    width: 300px;
+    border-radius: 10px;
+    padding: 30px 0;
+    margin: 0 10px;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    margin-top: 30px;
+}
+
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+}
+
+.info, .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h5 {
+    margin-top: 15px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.copyright p {
+    margin-left: 20px;
+    font-size: 0.5rem;
+}
